@@ -1,1 +1,1 @@
-# samoff-platformer
+Platformer game for GAME 225.
