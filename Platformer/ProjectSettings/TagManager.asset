@@ -11,15 +11,15 @@ TagManager:
   - 
   - Water
   - UI
-  - Interactables
-  - CoinCollector
-  - Foreground
   - Player
+  - Ground
   - Climbing
-  - Hazards
-  - Background
-  - Enemy
-  - Exit
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Water
     uniqueID: 3744773165
+    locked: 0
+  - name: Climbing
+    uniqueID: 2219686881
     locked: 0
   - name: Foreground
     uniqueID: 1384982533
