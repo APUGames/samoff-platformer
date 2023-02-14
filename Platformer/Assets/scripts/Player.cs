@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
 {
     Rigidbody2D playerCharacter;
     Animator playerAnimator;
-    Collider2D playerCollider;
+    CapsuleCollider2D playerBodyCollider;
+    BoxCollider2D playerFeetCollider;
 
     [Tooltip("Change this value to change the run speed.")]
     [SerializeField] float runSpeed = 5.0f;
@@ -24,7 +25,8 @@ public class Player : MonoBehaviour
     {
         playerCharacter = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        playerCollider = GetComponent<Collider2D>();
+        playerBodyCollider = GetComponent<CapsuleCollider2D>();
+        playerFeetCollider = GetComponent<BoxCollider2D>();
 
         // Store Gravity Scale when game starts
         gravityScaleAtStart = playerCharacter.gravityScale;
@@ -68,7 +70,7 @@ public class Player : MonoBehaviour
     private void Jump()
     {
         // Will stop the function unless true
-        if(!playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if(!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             return;
         }
@@ -84,7 +86,7 @@ public class Player : MonoBehaviour
     private void Climb()
     {
         // Will stop the function unless true
-        if (!playerCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        if (!playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
         {
             playerAnimator.SetBool("climb", false);
             playerCharacter.gravityScale = gravityScaleAtStart;

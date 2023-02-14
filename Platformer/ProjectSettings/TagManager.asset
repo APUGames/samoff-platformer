@@ -15,7 +15,7 @@ TagManager:
   - Ground
   - Climbing
   - Background
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: Foreground Fixes
     uniqueID: 4003202059
+    locked: 0
+  - name: Enemy
+    uniqueID: 2332153447
     locked: 0
   - name: Player
     uniqueID: 2779690583
