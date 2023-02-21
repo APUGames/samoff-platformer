@@ -16,8 +16,8 @@ TagManager:
   - Climbing
   - Background
   - Enemy
-  - 
-  - 
+  - Hazards
+  - Pickups
   - 
   - 
   - 
@@ -55,6 +55,12 @@ TagManager:
     locked: 0
   - name: Foreground Fixes
     uniqueID: 4003202059
+    locked: 0
+  - name: Hazards
+    uniqueID: 3326360617
+    locked: 0
+  - name: Pickups
+    uniqueID: 2983412803
     locked: 0
   - name: Enemy
     uniqueID: 2332153447
