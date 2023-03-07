@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1515276713
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 31575030c6109de449f0a6abe3d6c0fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -194,10 +194,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feb11196c545f3c4d9d5f93c3569eca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 906850167500237881, guid: 8942cc3e533185b4eb8d198748501980, type: 3}
   rotationSpeed: 200
   maxRotationSpeed: 1000
-  accelerationDistance: 5
-  proximityDistance: 5
-  maxVolume: 0.5
+  minDistance: 2
+  maxDistance: 10
+  proximityX: 10
+  proximityY: 10
   spinSound: {fileID: 8300000, guid: 1fe1590cf8327304c903b8fbbb349771, type: 3}
