@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class CoinPickup : MonoBehaviour
 {
-
+    [SerializeField] CapsuleCollider2D playerBodyCollider;
+    [SerializeField] int coinValue = 100;
     [SerializeField] AudioClip coinPickupSFX;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        AudioSource.PlayClipAtPoint(coinPickupSFX, Camera.main.transform.position);
-        Destroy(gameObject);
+        if (collision == playerBodyCollider)
+        {
+            FindObjectOfType<GameSession>().ProcessPlayerScore(coinValue);
+
+            AudioSource.PlayClipAtPoint(coinPickupSFX, Camera.main.transform.position);
+            Destroy(gameObject);
+        }
     }
 
 

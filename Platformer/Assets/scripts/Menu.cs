@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    // Public instead of Private, because the function needs to be accessible by the button object
+    // We need to make this method public because the Button needs to access it.
     public void StartGame()
     {
-        SceneManager.LoadScene(1); // The Scene after Scene 0 (Menu)
+        SceneManager.LoadScene(1);
     }
 
     public void ReplayGame()
@@ -16,8 +16,4 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 }

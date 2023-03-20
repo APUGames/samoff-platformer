@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/01 Start.unity
     guid: 28cd4e2288bf5b3479dbcd7463b05040
   - enabled: 1
-    path: Assets/Scenes/02 Tut.unity
-    guid: b90bb8b4e3b829e4894166fab947f8eb
-  - enabled: 1
     path: Assets/Scenes/03 Spikes.unity
     guid: 6d22cb7a91b1f9d4c89b3bd95006b346
   - enabled: 1
